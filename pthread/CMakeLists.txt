@@ -1,0 +1,10 @@
+add_subdirectory(multi_thread_guide_book)
+add_executable(pthread_cond_1 pthread_cond_1.c)
+add_executable(producer_customer producer_customer.c)
+add_executable(p_c2 p_c2.c)
+add_executable(cond_test cond_test.c)
+target_link_libraries(cond_test pthread)
+target_link_libraries(producer_customer pthread)
+target_link_libraries(p_c2 pthread)
+#add_executable(book_2_1 book_2_1.c)
+
